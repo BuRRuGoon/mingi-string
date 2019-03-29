@@ -11,7 +11,7 @@
 
 	<!-- dependency injection by constructor -->
 	<bean id="memberRegisterService"
-		class="org.mingi.jdbc.MemberRegisterService">
+		class="org.mingi.jdbc.chap03.MemberRegisterService">
 		<constructor-arg ref="memberDao" />
 	</bean>
 
