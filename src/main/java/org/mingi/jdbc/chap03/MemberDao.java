@@ -1,11 +1,18 @@
 package org.mingi.jdbc.chap03;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MemberDao {
-	public MemberDao() {
-		System.out.println("memberDao Instance created.");
+	Map<String, Member> map = new HashMap<>();
+
+	public Member selectByEmail(String email) {
+		return map.get(email);
 	}
 
-	public void getMember() {
-		System.out.println("getMember() is executed");
+	
+	public void insert(Member member) {
+		map.put(member.getEmail(), member);
 	}
+	
 }

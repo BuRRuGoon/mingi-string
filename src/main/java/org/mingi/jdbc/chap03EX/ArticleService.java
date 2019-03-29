@@ -1,4 +1,4 @@
-package org.mingi.jdbc.chap03;
+package org.mingi.jdbc.chap03EX;
 
 public class ArticleService {
 		MemberDao memberDao;
