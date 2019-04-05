@@ -1,18 +1,25 @@
-package org.mingi.jdbc.chap03;
+package org.mingi.jdbc.chap04;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.mingi.jdbc.chap03.DuplicateMemberException;
+import org.mingi.jdbc.chap03.Member;
+import org.mingi.jdbc.chap03.RegisterRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+
+@Service
 public class MemberRegisterService {
+	@Autowired
 	private MemberDao memberDao;
 
 	static Logger logger = LogManager.getLogger();
-
+	/**
 	public void setMemberDao(MemberDao memberDao) {
 		this.memberDao = memberDao;
 	}
 	
-	/**
 	public MemberRegisterService(MemberDao memberDao) {
 		this.memberDao = memberDao;
 	}
