@@ -35,7 +35,7 @@ public class MemberService {
 		Member member = new Member();
 		member.setEmail("alsrl7503@naver");
 		member.setPassword("7503");
-		member.setName("�ѹα�2");
+		member.setName("한민기");
 		memberDao.insert(member);
 		logger.debug("Insert complate");
 	}
