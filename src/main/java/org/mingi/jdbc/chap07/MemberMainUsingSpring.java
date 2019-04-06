@@ -5,11 +5,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MemberMainUsingSpring {
 	public static void main(String[] args) {
-		ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"chap08.xml");
+		ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("chap07.xml");
 		MemberService memberService = ctx.getBean(MemberService.class);
-		memberService.insertMember();
+		
+		//memberService.insertMember();
 		memberService.selectAll();
 		ctx.close();
-}
+	}
 }

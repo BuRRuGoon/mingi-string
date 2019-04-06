@@ -5,11 +5,14 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.mingi.jdbc.chap03.Member;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class MemberService {
 	Logger logger = LogManager.getLogger();
 	
-	
+	@Autowired
 	MemberDao memberDao = null;
 	
 	public void setMemberDao(MemberDao memberDao) {
@@ -30,9 +33,9 @@ public class MemberService {
 	
 	public void insertMember() {
 		Member member = new Member();
-		member.setEmail("alsrl7503@naver.com");
+		member.setEmail("alsrl7503@naver");
 		member.setPassword("7503");
-		member.setName("한민기");
+		member.setName("�ѹα�2");
 		memberDao.insert(member);
 		logger.debug("Insert complate");
 	}
