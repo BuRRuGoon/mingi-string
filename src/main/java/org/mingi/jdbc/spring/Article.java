@@ -74,6 +74,6 @@ public class Article {
 		public String toString() {
 			return "Article [articleId=" + articleId + ", title=" + title
 					+ ", content=" + content + ", userId=" + userId + ", name="
-					+ name + ", cdate=" + cdate + "]";
+					+ name + ", cdate=" + cdate + "]\n";
 	}
 }

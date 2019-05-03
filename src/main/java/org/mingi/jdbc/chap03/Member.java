@@ -60,7 +60,7 @@ public class Member {
 	public String toString() {
 		return "Member [memberId=" + memberId + ", email=" + email
 				+ ", password=" + password + ", name=" + name
-				+ ", registerDate=" + registerDate + "]";
+				+ ", registerDate=" + registerDate + "]\n";
 }
 
 }

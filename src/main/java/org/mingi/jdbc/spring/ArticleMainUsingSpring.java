@@ -11,7 +11,7 @@ public class ArticleMainUsingSpring {
 				ArticleService.class);
 		context.close();
 		
-		articleService.addArticle();
+		//articleService.addArticle();
 		articleService.listArticles();
 	}
 }
